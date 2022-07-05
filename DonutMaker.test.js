@@ -46,6 +46,12 @@ describe("DonutMaker", ()=>{
         expect(underTest.numDonuts).toEqual(105);
     });
 
+    test("should have the ability to add a multiplier", () => {
+        const underTest = new DonutMaker(100, 5, 100);
+        underTest.activateAutoClickers();
+        expect(underTest.numDonuts).toEqual(105);
+    });
+
 
     
 
