@@ -20,6 +20,10 @@ class DonutMaker {
             this.autoClickerCost += this.autoClickerCost * 0.1;
         }
     }
+
+    activateAutoClickers(){
+        this.numDonuts += this.numAutoClickers;
+    }
 }
 
 export default DonutMaker;
