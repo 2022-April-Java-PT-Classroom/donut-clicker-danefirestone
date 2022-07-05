@@ -72,9 +72,9 @@ describe("DonutMaker", ()=>{
     });
 
     test("each multiplier should multiply the donuts produced by clickers by 1.2", () => {
-        const underTest = new DonutMaker(100, 5, 100, 0, 10);
+        const underTest = new DonutMaker(9, 5, 100, 0, 10);
         underTest.addDonut();
-        expect(underTest.numDonuts).toEqual(101.2);
+        expect(underTest.num).toEqual(0);
     });
 
     
